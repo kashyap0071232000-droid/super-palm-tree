@@ -54,6 +54,9 @@ importers:
       fastify:
         specifier: ^4.29.1
         version: 4.29.1
+      zod:
+        specifier: ^4.0.14
+        version: 4.0.14
     devDependencies:
       ts-node:
         specifier: ^10.9.2
@@ -99,7 +102,11 @@ importers:
 
   packages/ui: {}
 
-  packages/validation: {}
+  packages/validation:
+    dependencies:
+      zod:
+        specifier: ^4.0.14
+        version: 4.0.14
 
 packages:
 
@@ -1028,6 +1035,9 @@ packages:
     resolution: {integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==}
     engines: {node: '>=6'}
 
+  zod@4.0.14:
+    resolution: {integrity: sha512-nGFJTnJN6cM2v9kXL+SOBq3AtjQby3Mv5ySGFof5UGRHrRioSJ5iG680cYNjE/yWk671nROcpPj4hAS8nyLhSw==}
+
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
@@ -1861,3 +1871,5 @@ snapshots:
   yaml@2.8.0: {}
 
   yn@3.1.1: {}
+
+  zod@4.0.14: {}
